@@ -1,0 +1,2 @@
+Data5432
+mongodb+srv://emillammela:<password>@cluster0.nzjvdji.mongodb.net/

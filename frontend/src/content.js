@@ -1,11 +1,19 @@
 import React from 'react';
 import kuva1 from './images/man.jpg';
 import './content.css';
+import AddDataForm from './add_data_db.js';
 
 function Content({ updateContent }) {
   const handleButtonClick = (newContent) => {
     updateContent(newContent);
   };
+
+  const halytys = () => {
+    alert('TOSI HIANO HÄLYTYSfi!');
+  };
+
+
+  
 
   return (
     <div>
@@ -45,6 +53,17 @@ function Content({ updateContent }) {
         )}>
           Etusivu
         </button>
+
+        <button onClick={halytys} className="button">Alert nappi.</button>
+
+        <button className="button" onClick={() => handleButtonClick(
+          <div>
+            <AddDataForm />
+          </div>
+        )}>
+          Database testi
+        </button>
+
 
       </div>
     </div>
